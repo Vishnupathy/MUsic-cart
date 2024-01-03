@@ -1,0 +1,190 @@
+/* Breakpoint prefix	Minimum width	CSS
+sm	640px	@media screen and (min-width: 640px) { ... }
+md	768px	@media screen and (min-width: 768px) { ... }
+lg	1024px	@media screen and (min-width: 1024px) { ... }
+xl	1280px	@media screen and (min-width: 1280px) { ... }
+2xl	1536px	@media screen and (min-width: 1536px) { ... } */
+
+p {
+    font-size: 16px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+  
+  input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+           -webkit-appearance: none;
+        }
+  
+  :root {
+    --primary:#2E0052;
+    --black:#000000;
+    --white:#ffffff;
+    --light1:#B6B6B6;
+    --light2:#bdbdbd;
+    --light3:#D9D9D9;
+    --light4:#d0d0d0;
+    --light5:#909090;
+    --secondary:#0066ff; 
+  }
+
+  .text-white {
+    color: #ffffff;
+  }
+  
+  .text-black {
+    color: #000000;
+  }
+
+  .primary-button {
+    background-color: var(--primary);
+    height: 40px;
+    border-radius: 6px;
+    color: var(--white);
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    margin-top: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .primary-button  {
+      height: 52px;
+      font-size: 18px;
+      border-radius: 8px;
+    }
+  }
+
+/* Login and Signup Pages */
+
+/* .login-signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+} */
+
+.login-signup-heading {
+  font-weight: 400;
+  margin-top: 32px;
+  color: var(--primary);
+}
+
+@media screen and (min-width:768px) {
+  .login-signup-heading {
+      display: none;
+  }
+}
+
+.login-signup-form {
+  display: flex;
+  max-width: 500px;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  border: 2px solid var(--light4);
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .login-signup-form {
+    padding: 16px 28px;
+    border-radius: 22px;
+  }
+}
+
+.form-span-text {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.form-heading {
+  font-size: 18px;
+  font-weight: 500;
+  }
+
+@media screen and (min-width: 768px) {
+  .form-span-text {
+    display: none;
+    color: var(--black);
+    text-decoration: none;
+  }
+
+  .form-heading {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 12px 0;
+    }
+}
+
+.input-bar {
+  height: 36px;
+  border-radius: 6px;
+  border: 1.2px solid var(--light1);
+  margin-top: 8px;
+  /* margin-bottom: 13.23px; */
+  padding: 0 12px;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .input-bar {
+    height: 52px;
+    margin-top: 10px;
+    /* margin-bottom: 16px; */
+  }
+}
+
+  .label-text {
+    font-weight: 500;
+    margin-top: 14px;
+  }
+  
+  .privacy-notice {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .privacy-notice {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+  
+  .form-page-logo {
+    display: none;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .form-page-logo {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .form-input-error-msg {
+    color: red;
+    margin: 0px;
+    font-weight: 500;
+  }
+
+  /* ------------------------- */
+  
+  .logo-start {
+    width: 100%;
+    display: none;
+    margin-bottom: 24px;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .logo-start {
+      display: flex;
+      justify-content: start;
+    }
+  }

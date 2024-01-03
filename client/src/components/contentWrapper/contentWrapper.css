@@ -1,0 +1,34 @@
+.content-wrapper {
+    width: 100%;
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .contentwrapper-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-success-center {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.desktop-navbar-container-el {
+  max-width: 1420px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .order-success-center {
+    justify-content: start;
+  }
+}
